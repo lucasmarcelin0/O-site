@@ -1,0 +1,46 @@
+        {% extends "layout.html" %}
+
+        {% block titulo %}
+        Seja bem vindo!
+        {% endblock %}
+        
+        {% block conteudo %}
+        <form action="action_page.php" method="post">
+            <img src="img_avatar2.png" alt="Avatar" class="avatar">                 
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+            <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+            <button onclick="manutencao()" type="submit">Login</button>
+            <button type="button" class="cancelbtn">Cancel</button>
+            <span class="psw">Forgot <a href="#">password?</a></span>
+        </form>
+        {% endblock %}
+        
+        {% block videos %}
+        
+        <form action="action_page.php" style="border:1px solid #ccc">
+            <p>Por favor, preencha o formulário</p>
+            <hr>       
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Escreva seu Email" name="email" required>      
+            <label for="psw"><b>Senha</b></label>
+            <input type="password" placeholder="Escreva sua senha" name="psw" required>     
+            <label for="psw-repeat"><b>Senha</b></label>
+            <input type="password" placeholder="Escreva sua senha" name="psw-repeat" required>       
+            <label>
+            <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Lembrar
+            </label>
+            
+        
+            <p>Ao criar a sua conta, você concorda com nossos <a href="#" style="color:dodgerblue">Termos de privacidade</a>.
+        
+            <button onclick="manutencao()" type="submit">Login</button>
+            <button type="button" class="cancelbtn">Cancel</button>
+        
+        {% endblock %}
+            
+ 

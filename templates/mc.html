@@ -1,0 +1,28 @@
+
+        {% extends "layout.html" %}
+
+        {% block titulo %}
+        Fábrica de Questões!!!
+        {% endblock %}
+        
+        {% block conteudo %}
+        <form>
+            <label for="fquestion">Write your question!</label><br>
+            <input type="text" id="fquestion" name="fquestion"><br>
+            <label for="fanswer">Write the answers and choose the correct answer!!</label><br>
+            <input type="radio" id="A" name="answer" value="A"
+            <label for="A">A</label><input type="text" id="fa" name="fa"><br>
+            <input type="radio" id="B" name="answer" value="B"
+            <label for="B">B</label><input type="text" id="fb" name="fb"><br>
+            <input type="radio" id="C" name="answer" value="C"
+            <label for="C">C</label><input type="text" id="fc" name="fc"><br>
+            <input type="radio" id="D" name="answer" value="D"
+            <label for="D">D</label><input type="text" id="fd" name="fd"><br>
+            <input type="submit" value="submit>"
+        </form>
+        {% endblock %}
+        
+        {% block videos %}
+        
+        {% endblock %}
+        
